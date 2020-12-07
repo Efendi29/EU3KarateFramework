@@ -1,0 +1,130 @@
+<testsuite failures="0" name="features/ParametersTest.feature" skipped="0" tests="5" time="1.522422">
+  <testcase classname="features.ParametersTest" name="path parameters" time="0.151578">
+    <system-out>* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+Given url baseUrl ......................................................... passed
+And path "latest" ......................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="features.ParametersTest" name="path parameters" time="0.130971">
+    <system-out>* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+Given url baseUrl ......................................................... passed
+And path "latest" ......................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+Given url baseUrl ......................................................... passed
+And path "2010-01-12" ..................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="features.ParametersTest" name="get all spartans with path" time="0.517209">
+    <system-out>* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+Given url baseUrl ......................................................... passed
+And path "latest" ......................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+Given url baseUrl ......................................................... passed
+And path "2010-01-12" ..................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="features.ParametersTest" name="get ones spartan only" time="0.356333">
+    <system-out>* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+Given url baseUrl ......................................................... passed
+And path "latest" ......................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+Given url baseUrl ......................................................... passed
+And path "2010-01-12" ..................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+And path "10" ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response == { "gender": "Female", "phone": 3312820936, "name": "Lorenza", "id": 10} . passed</system-out>
+  </testcase>
+  <testcase classname="features.ParametersTest" name="get ones spartan only" time="0.366332">
+    <system-out>* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+Given url baseUrl ......................................................... passed
+And path "latest" ......................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+Given url baseUrl ......................................................... passed
+And path "2010-01-12" ..................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+And path "10" ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response == { "gender": "Female", "phone": 3312820936, "name": "Lorenza", "id": 10} . passed
+* def baseUrl = 'https://api.exchangeratesapi.io' ......................... passed
+* def spartanUrl = 'http://100.25.192.1:8000' ............................. passed
+* def hrUrl = 'http://100.25.192.1:1000/ords/hr' .......................... passed
+* def expectedSpartan = ................................................... passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+And path "10" ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response == expectedSpartan ..................................... passed</system-out>
+  </testcase>
+</testsuite>

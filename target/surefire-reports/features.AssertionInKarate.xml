@@ -1,0 +1,49 @@
+<testsuite failures="0" name="features/AssertionInKarate.feature" skipped="0" tests="4" time="0.206782">
+  <testcase classname="features.AssertionInKarate" name="some matching example" time="0.014995">
+    <system-out>* def name = 'Severus Snape' .............................................. passed
+* match name == 'Severus Snape' ........................................... passed
+* match name != 'Tom Riddle' .............................................. passed</system-out>
+  </testcase>
+  <testcase classname="features.AssertionInKarate" name="more matching example" time="0.151994">
+    <system-out>* def name = 'Severus Snape' .............................................. passed
+* match name == 'Severus Snape' ........................................... passed
+* match name != 'Tom Riddle' .............................................. passed
+* def employee = .......................................................... passed
+* def emp_name = employee.first_name ...................................... passed
+* match emp_name == 'TJ' .................................................. passed
+* match employee.salary == 24001 .......................................... passed</system-out>
+  </testcase>
+  <testcase classname="features.AssertionInKarate" name="fuzzy matching" time="0.021637">
+    <system-out>* def name = 'Severus Snape' .............................................. passed
+* match name == 'Severus Snape' ........................................... passed
+* match name != 'Tom Riddle' .............................................. passed
+* def employee = .......................................................... passed
+* def emp_name = employee.first_name ...................................... passed
+* match emp_name == 'TJ' .................................................. passed
+* match employee.salary == 24001 .......................................... passed
+* def employee = .......................................................... passed
+* match employee.first_name == '#string' .................................. passed
+* match employee.salary == '#number' ...................................... passed
+* match employee.active == '#boolean' ..................................... passed
+* match employee.last_name == '#notpresent' ............................... passed</system-out>
+  </testcase>
+  <testcase classname="features.AssertionInKarate" name="contains matching" time="0.018156">
+    <system-out>* def name = 'Severus Snape' .............................................. passed
+* match name == 'Severus Snape' ........................................... passed
+* match name != 'Tom Riddle' .............................................. passed
+* def employee = .......................................................... passed
+* def emp_name = employee.first_name ...................................... passed
+* match emp_name == 'TJ' .................................................. passed
+* match employee.salary == 24001 .......................................... passed
+* def employee = .......................................................... passed
+* match employee.first_name == '#string' .................................. passed
+* match employee.salary == '#number' ...................................... passed
+* match employee.active == '#boolean' ..................................... passed
+* match employee.last_name == '#notpresent' ............................... passed
+* def employees = ......................................................... passed
+* def length = employees.length ........................................... passed
+* print length ............................................................ passed
+* match  length == 2 ...................................................... passed
+* match employees contains any {"first_name":"TJ","salary":24001,"active":true } . passed</system-out>
+  </testcase>
+</testsuite>

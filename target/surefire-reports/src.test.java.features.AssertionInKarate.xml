@@ -1,0 +1,9 @@
+<testsuite failures="0" name="src/test/java/features/AssertionInKarate.feature" skipped="0" tests="1" time="0.119232">
+  <testcase classname="src.test.java.features.AssertionInKarate" name="contains matching" time="0.119232">
+    <system-out>* def employees = ......................................................... passed
+* def length = employees.length ........................................... passed
+* print length ............................................................ passed
+* match  length == 2 ...................................................... passed
+* match employees contains any {"first_name":"TJ","salary":24001,"active":true } . passed</system-out>
+  </testcase>
+</testsuite>

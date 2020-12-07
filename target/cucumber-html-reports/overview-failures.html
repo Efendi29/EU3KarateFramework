@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Failures Overview</title>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation"  class="active" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>07 Dec 2020, 22:09</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Failures Overview</h2>
+          <p>The following summary displays scenarios that failed.</p>
+      </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+              <div class="elements">
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_features-SpartanWithJava-feature_6.html">features/SpartanWithJava.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">298ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create a new spartan</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url spartanUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;api/spartans&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>{
+    &quot;gender&quot;: &quot;Female&quot;,
+     &quot;name&quot;: &quot;Lorenza&quot;,
+     &quot;phone&quot;: 3123781237
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">296ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>22:09:06.029 request:
+1 &gt; POST http://52.55.102.92:8000/api/spartans
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 55
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: 52.55.102.92:8000
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Lorenza&quot;,&quot;phone&quot;:3123781237}
+
+22:09:06.317 response time in milliseconds: 287.48
+1 &lt; 500
+1 &lt; Connection: close
+1 &lt; Content-Type: application/json
+1 &lt; Date: Mon, 07 Dec 2020 21:09:07 GMT
+1 &lt; Transfer-Encoding: chunked
+{&quot;timestamp&quot;:&quot;2020-12-07T21:09:08.059+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;&quot;,&quot;path&quot;:&quot;/api/spartans&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>com.intuit.karate.exception.KarateException: SpartanWithJava.feature:24 - status code was: 500, expected: 201, response time: 287, url: http://52.55.102.92:8000/api/spartans, response: {&quot;path&quot;:&quot;/api/spartans&quot;,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;&quot;,&quot;timestamp&quot;:&quot;2020-12-07T21:09:08.059+00:00&quot;,&quot;status&quot;:500}</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: SpartanWithJava.feature:24 - status code was: 500, expected: 201, response time: 287, url: http://52.55.102.92:8000/api/spartans, response: {&quot;path&quot;:&quot;/api/spartans&quot;,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;&quot;,&quot;timestamp&quot;:&quot;2020-12-07T21:09:08.059+00:00&quot;,&quot;status&quot;:500}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>22:09:06.318 status code was: 500, expected: 201, response time: 287, url: http://52.55.102.92:8000/api/spartans, response: {&quot;path&quot;:&quot;/api/spartans&quot;,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;&quot;,&quot;timestamp&quot;:&quot;2020-12-07T21:09:08.059+00:00&quot;,&quot;status&quot;:500}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_features-SpartanWithJava-feature_6.html">features/SpartanWithJava.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">377ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create a spartan with Random Data (JAVA)</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def SDG = Java.type('utilities.SpartanDataGenerator')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def newSpartan = SDG.createSpartan()</span>
+  
+  <span class="lead-duration duration">133ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url spartanUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;api/spartans&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request newSpartan</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">241ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>22:09:06.284 request:
+1 &gt; POST http://52.55.102.92:8000/api/spartans
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 53
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: 52.55.102.92:8000
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:739268685,&quot;name&quot;:&quot;Darcel&quot;}
+
+22:09:06.523 response time in milliseconds: 238.58
+1 &lt; 400
+1 &lt; Connection: close
+1 &lt; Content-Type: application/json
+1 &lt; Date: Mon, 07 Dec 2020 21:09:07 GMT
+1 &lt; Transfer-Encoding: chunked
+{&quot;timestamp&quot;:&quot;2020-12-07T21:09:08.278+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;&quot;,&quot;path&quot;:&quot;/api/spartans&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>com.intuit.karate.exception.KarateException: SpartanWithJava.feature:43 - status code was: 400, expected: 201, response time: 239, url: http://52.55.102.92:8000/api/spartans, response: {&quot;path&quot;:&quot;/api/spartans&quot;,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;&quot;,&quot;timestamp&quot;:&quot;2020-12-07T21:09:08.278+00:00&quot;,&quot;status&quot;:400}</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: SpartanWithJava.feature:43 - status code was: 400, expected: 201, response time: 239, url: http://52.55.102.92:8000/api/spartans, response: {&quot;path&quot;:&quot;/api/spartans&quot;,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;&quot;,&quot;timestamp&quot;:&quot;2020-12-07T21:09:08.278+00:00&quot;,&quot;status&quot;:400}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>22:09:06.525 status code was: 400, expected: 201, response time: 239, url: http://52.55.102.92:8000/api/spartans, response: {&quot;path&quot;:&quot;/api/spartans&quot;,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;&quot;,&quot;timestamp&quot;:&quot;2020-12-07T21:09:08.278+00:00&quot;,&quot;status&quot;:400}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.success == 'A Spartan is Born!'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.name == newSpartan.name</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_features-SpartanWithJava-feature_6.html">features/SpartanWithJava.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">346ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-12">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create a spartan with Random Data (JAVA) and delete</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-12" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-13">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-13" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def SDG = Java.type('utilities.SpartanDataGenerator')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def newSpartan = SDG.createSpartan()</span>
+  
+  <span class="lead-duration duration">056ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url spartanUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;api/spartans&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request newSpartan</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">288ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>22:09:06.349 request:
+1 &gt; POST http://52.55.102.92:8000/api/spartans
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 54
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: 52.55.102.92:8000
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:6158673434,&quot;name&quot;:&quot;Erlene&quot;}
+
+22:09:06.635 response time in milliseconds: 285.44
+1 &lt; 500
+1 &lt; Connection: close
+1 &lt; Content-Type: application/json
+1 &lt; Date: Mon, 07 Dec 2020 21:09:07 GMT
+1 &lt; Transfer-Encoding: chunked
+{&quot;timestamp&quot;:&quot;2020-12-07T21:09:08.387+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;&quot;,&quot;path&quot;:&quot;/api/spartans&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
+          <a>com.intuit.karate.exception.KarateException: SpartanWithJava.feature:58 - status code was: 500, expected: 201, response time: 285, url: http://52.55.102.92:8000/api/spartans, response: {&quot;path&quot;:&quot;/api/spartans&quot;,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;&quot;,&quot;timestamp&quot;:&quot;2020-12-07T21:09:08.387+00:00&quot;,&quot;status&quot;:500}</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: SpartanWithJava.feature:58 - status code was: 500, expected: 201, response time: 285, url: http://52.55.102.92:8000/api/spartans, response: {&quot;path&quot;:&quot;/api/spartans&quot;,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;&quot;,&quot;timestamp&quot;:&quot;2020-12-07T21:09:08.387+00:00&quot;,&quot;status&quot;:500}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>22:09:06.636 status code was: 500, expected: 201, response time: 285, url: http://52.55.102.92:8000/api/spartans, response: {&quot;path&quot;:&quot;/api/spartans&quot;,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;&quot;,&quot;timestamp&quot;:&quot;2020-12-07T21:09:08.387+00:00&quot;,&quot;status&quot;:500}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.success == 'A Spartan is Born!'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.name == newSpartan.name</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">def idToDelete = response.data.id</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">url spartanUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'api/spartans',idToDelete</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method DELETE</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 204</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_src-test-java-features-BookItTests-feature_10.html">src/test/java/features/BookItTests.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">617ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">get campus information</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-18">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'api/campuses'</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + accessToken</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">590ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>22:05:34.628 request:
+1 &gt; GET https://cybertek-reservation-api-qa2.herokuapp.com/api/campuses
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: cybertek-reservation-api-qa2.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+22:05:35.214 response time in milliseconds: 578.18
+1 &lt; 200
+1 &lt; Connection: close
+1 &lt; Content-Type: application/json
+1 &lt; Date: Mon, 07 Dec 2020 21:05:35 GMT
+1 &lt; Server: Jetty(9.4.8.v20171121)
+1 &lt; Via: 1.1 vegur
+[{&quot;id&quot;:1,&quot;location&quot;:&quot;VA&quot;,&quot;clusters&quot;:[{&quot;id&quot;:3,&quot;name&quot;:&quot;light-side&quot;,&quot;rooms&quot;:[{&quot;id&quot;:111,&quot;name&quot;:&quot;mit&quot;,&quot;description&quot;:&quot;mens et manus&quot;,&quot;capacity&quot;:6,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:true},{&quot;id&quot;:112,&quot;name&quot;:&quot;harvard&quot;,&quot;description&quot;:&quot;veritas&quot;,&quot;capacity&quot;:6,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:false},{&quot;id&quot;:113,&quot;name&quot;:&quot;yale&quot;,&quot;description&quot;:&quot;lux et veritas&quot;,&quot;capacity&quot;:6,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:false},{&quot;id&quot;:114,&quot;name&quot;:&quot;princeton&quot;,&quot;description&quot;:&quot;dei sub numine viget&quot;,&quot;capacity&quot;:4,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:false},{&quot;id&quot;:115,&quot;name&quot;:&quot;stanford&quot;,&quot;description&quot;:&quot;die luft der freiheit weht&quot;,&quot;capacity&quot;:6,&quot;withTV&quot;:false,&quot;withWhiteBoard&quot;:true},{&quot;id&quot;:116,&quot;name&quot;:&quot;duke&quot;,&quot;description&quot;:&quot;eruditio et religio&quot;,&quot;capacity&quot;:4,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:false},{&quot;id&quot;:117,&quot;name&quot;:&quot;berkeley&quot;,&quot;description&quot;:&quot;fiat lux&quot;,&quot;capacity&quot;:4,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:false}]},{&quot;id&quot;:4,&quot;name&quot;:&quot;dark-side&quot;,&quot;rooms&quot;:[{&quot;id&quot;:121,&quot;name&quot;:&quot;kilimanjaro&quot;,&quot;description&quot;:&quot;it isn\u0027t the mountains ahead to climb that wear you out, it\u0027s the pebble in your shoe&quot;,&quot;capacity&quot;:6,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:true},{&quot;id&quot;:122,&quot;name&quot;:&quot;half dome&quot;,&quot;description&quot;:&quot;faith moves mountains&quot;,&quot;capacity&quot;:6,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:true},{&quot;id&quot;:123,&quot;name&quot;:&quot;denali&quot;,&quot;description&quot;:&quot;you can\u0027t move mountains by whispering at them&quot;,&quot;capacity&quot;:4,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:true},{&quot;id&quot;:124,&quot;name&quot;:&quot;meru&quot;,&quot;description&quot;:&quot;every mountain top is within reach if you just keep climbing&quot;,&quot;capacity&quot;:4,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:true}]}]}, {&quot;id&quot;:2,&quot;location&quot;:&quot;IL&quot;,&quot;clusters&quot;:[{&quot;id&quot;:5,&quot;name&quot;:&quot;il&quot;,&quot;rooms&quot;:[{&quot;id&quot;:211,&quot;name&quot;:&quot;google&quot;,&quot;description&quot;:&quot;don\u0027t be evil&quot;,&quot;capacity&quot;:6,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:true},{&quot;id&quot;:212,&quot;name&quot;:&quot;apple&quot;,&quot;description&quot;:&quot;think different&quot;,&quot;capacity&quot;:6,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:true},{&quot;id&quot;:213,&quot;name&quot;:&quot;microsoft&quot;,&quot;description&quot;:&quot;be what\u0027s next&quot;,&quot;capacity&quot;:6,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:true},{&quot;id&quot;:214,&quot;name&quot;:&quot;bay_area&quot;,&quot;description&quot;:&quot;make future&quot;,&quot;capacity&quot;:6,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:true},{&quot;id&quot;:215,&quot;name&quot;:&quot;amazon&quot;,&quot;description&quot;:&quot;work hard. have fun. make history&quot;,&quot;capacity&quot;:6,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:true},{&quot;id&quot;:216,&quot;name&quot;:&quot;tesla&quot;,&quot;description&quot;:&quot;just do it&quot;,&quot;capacity&quot;:6,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:true},{&quot;id&quot;:217,&quot;name&quot;:&quot;facebook&quot;,&quot;description&quot;:&quot;move fast and break things&quot;,&quot;capacity&quot;:6,&quot;withTV&quot;:true,&quot;withWhiteBoard&quot;:true}]}]}]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>22:05:35.219 [print] [
+  {
+    &quot;location&quot;: &quot;VA&quot;,
+    &quot;id&quot;: 1,
+    &quot;clusters&quot;: [
+      {
+        &quot;rooms&quot;: [
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;mit&quot;,
+            &quot;description&quot;: &quot;mens et manus&quot;,
+            &quot;id&quot;: 111,
+            &quot;withWhiteBoard&quot;: true,
+            &quot;capacity&quot;: 6
+          },
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;harvard&quot;,
+            &quot;description&quot;: &quot;veritas&quot;,
+            &quot;id&quot;: 112,
+            &quot;withWhiteBoard&quot;: false,
+            &quot;capacity&quot;: 6
+          },
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;yale&quot;,
+            &quot;description&quot;: &quot;lux et veritas&quot;,
+            &quot;id&quot;: 113,
+            &quot;withWhiteBoard&quot;: false,
+            &quot;capacity&quot;: 6
+          },
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;princeton&quot;,
+            &quot;description&quot;: &quot;dei sub numine viget&quot;,
+            &quot;id&quot;: 114,
+            &quot;withWhiteBoard&quot;: false,
+            &quot;capacity&quot;: 4
+          },
+          {
+            &quot;withTV&quot;: false,
+            &quot;name&quot;: &quot;stanford&quot;,
+            &quot;description&quot;: &quot;die luft der freiheit weht&quot;,
+            &quot;id&quot;: 115,
+            &quot;withWhiteBoard&quot;: true,
+            &quot;capacity&quot;: 6
+          },
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;duke&quot;,
+            &quot;description&quot;: &quot;eruditio et religio&quot;,
+            &quot;id&quot;: 116,
+            &quot;withWhiteBoard&quot;: false,
+            &quot;capacity&quot;: 4
+          },
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;berkeley&quot;,
+            &quot;description&quot;: &quot;fiat lux&quot;,
+            &quot;id&quot;: 117,
+            &quot;withWhiteBoard&quot;: false,
+            &quot;capacity&quot;: 4
+          }
+        ],
+        &quot;name&quot;: &quot;light-side&quot;,
+        &quot;id&quot;: 3
+      },
+      {
+        &quot;rooms&quot;: [
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;kilimanjaro&quot;,
+            &quot;description&quot;: &quot;it isn't the mountains ahead to climb that wear you out, it's the pebble in your shoe&quot;,
+            &quot;id&quot;: 121,
+            &quot;withWhiteBoard&quot;: true,
+            &quot;capacity&quot;: 6
+          },
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;half dome&quot;,
+            &quot;description&quot;: &quot;faith moves mountains&quot;,
+            &quot;id&quot;: 122,
+            &quot;withWhiteBoard&quot;: true,
+            &quot;capacity&quot;: 6
+          },
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;denali&quot;,
+            &quot;description&quot;: &quot;you can't move mountains by whispering at them&quot;,
+            &quot;id&quot;: 123,
+            &quot;withWhiteBoard&quot;: true,
+            &quot;capacity&quot;: 4
+          },
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;meru&quot;,
+            &quot;description&quot;: &quot;every mountain top is within reach if you just keep climbing&quot;,
+            &quot;id&quot;: 124,
+            &quot;withWhiteBoard&quot;: true,
+            &quot;capacity&quot;: 4
+          }
+        ],
+        &quot;name&quot;: &quot;dark-side&quot;,
+        &quot;id&quot;: 4
+      }
+    ]
+  },
+  {
+    &quot;location&quot;: &quot;IL&quot;,
+    &quot;id&quot;: 2,
+    &quot;clusters&quot;: [
+      {
+        &quot;rooms&quot;: [
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;google&quot;,
+            &quot;description&quot;: &quot;don't be evil&quot;,
+            &quot;id&quot;: 211,
+            &quot;withWhiteBoard&quot;: true,
+            &quot;capacity&quot;: 6
+          },
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;apple&quot;,
+            &quot;description&quot;: &quot;think different&quot;,
+            &quot;id&quot;: 212,
+            &quot;withWhiteBoard&quot;: true,
+            &quot;capacity&quot;: 6
+          },
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;microsoft&quot;,
+            &quot;description&quot;: &quot;be what's next&quot;,
+            &quot;id&quot;: 213,
+            &quot;withWhiteBoard&quot;: true,
+            &quot;capacity&quot;: 6
+          },
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;bay_area&quot;,
+            &quot;description&quot;: &quot;make future&quot;,
+            &quot;id&quot;: 214,
+            &quot;withWhiteBoard&quot;: true,
+            &quot;capacity&quot;: 6
+          },
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;amazon&quot;,
+            &quot;description&quot;: &quot;work hard. have fun. make history&quot;,
+            &quot;id&quot;: 215,
+            &quot;withWhiteBoard&quot;: true,
+            &quot;capacity&quot;: 6
+          },
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;tesla&quot;,
+            &quot;description&quot;: &quot;just do it&quot;,
+            &quot;id&quot;: 216,
+            &quot;withWhiteBoard&quot;: true,
+            &quot;capacity&quot;: 6
+          },
+          {
+            &quot;withTV&quot;: true,
+            &quot;name&quot;: &quot;facebook&quot;,
+            &quot;description&quot;: &quot;move fast and break things&quot;,
+            &quot;id&quot;: 217,
+            &quot;withWhiteBoard&quot;: true,
+            &quot;capacity&quot;: 6
+          }
+        ],
+        &quot;name&quot;: &quot;il&quot;,
+        &quot;id&quot;: 5
+      }
+    ]
+  }
+]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def expectedCampuses = read('classpath:data/campuses.json')</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == expectedCampuses</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-21">
+          <a>com.intuit.karate.exception.KarateException: BookItTests.feature:31 - path: $, actual: [{&quot;location&quot;:&quot;VA&quot;,&quot;id&quot;:1,&quot;clusters&quot;:[{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;mit&quot;,&quot;description&quot;:&quot;mens et manus&quot;,&quot;id&quot;:111,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;harvard&quot;,&quot;description&quot;:&quot;veritas&quot;,&quot;id&quot;:112,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;yale&quot;,&quot;description&quot;:&quot;lux et veritas&quot;,&quot;id&quot;:113,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;princeton&quot;,&quot;description&quot;:&quot;dei sub numine viget&quot;,&quot;id&quot;:114,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4},{&quot;withTV&quot;:false,&quot;name&quot;:&quot;stanford&quot;,&quot;description&quot;:&quot;die luft der freiheit weht&quot;,&quot;id&quot;:115,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;duke&quot;,&quot;description&quot;:&quot;eruditio et religio&quot;,&quot;id&quot;:116,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;berkeley&quot;,&quot;description&quot;:&quot;fiat lux&quot;,&quot;id&quot;:117,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4}],&quot;name&quot;:&quot;light-side&quot;,&quot;id&quot;:3},{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;kilimanjaro&quot;,&quot;description&quot;:&quot;it isn't the mountains ahead to climb that wear you out, it's the pebble in your shoe&quot;,&quot;id&quot;:121,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;half dome&quot;,&quot;description&quot;:&quot;faith moves mountains&quot;,&quot;id&quot;:122,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;denali&quot;,&quot;description&quot;:&quot;you can't move mountains by whispering at them&quot;,&quot;id&quot;:123,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:4},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;meru&quot;,&quot;description&quot;:&quot;every mountain top is within reach if you just keep climbing&quot;,&quot;id&quot;:124,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:4}],&quot;name&quot;:&quot;dark-side&quot;,&quot;id&quot;:4}]},{&quot;location&quot;:&quot;IL&quot;,&quot;id&quot;:2,&quot;clusters&quot;:[{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;google&quot;,&quot;description&quot;:&quot;don't be evil&quot;,&quot;id&quot;:211,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;apple&quot;,&quot;description&quot;:&quot;think different&quot;,&quot;id&quot;:212,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;microsoft&quot;,&quot;description&quot;:&quot;be what's next&quot;,&quot;id&quot;:213,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;bay_area&quot;,&quot;description&quot;:&quot;make future&quot;,&quot;id&quot;:214,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;amazon&quot;,&quot;description&quot;:&quot;work hard. have fun. make history&quot;,&quot;id&quot;:215,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;tesla&quot;,&quot;description&quot;:&quot;just do it&quot;,&quot;id&quot;:216,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;facebook&quot;,&quot;description&quot;:&quot;move fast and break things&quot;,&quot;id&quot;:217,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6}],&quot;name&quot;:&quot;il&quot;,&quot;id&quot;:5}]}], expected: {location=VA, id=1, clusters=[{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;mit&quot;,&quot;description&quot;:&quot;mens et manus&quot;,&quot;id&quot;:111,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;harvard&quot;,&quot;description&quot;:&quot;veritas&quot;,&quot;id&quot;:112,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;yale&quot;,&quot;description&quot;:&quot;lux et veritas&quot;,&quot;id&quot;:113,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;princeton&quot;,&quot;description&quot;:&quot;dei sub numine viget&quot;,&quot;id&quot;:114,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4},{&quot;withTV&quot;:false,&quot;name&quot;:&quot;stanford&quot;,&quot;description&quot;:&quot;die luft der freiheit weht&quot;,&quot;id&quot;:115,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;duke&quot;,&quot;description&quot;:&quot;eruditio et religio&quot;,&quot;id&quot;:116,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;berkeley&quot;,&quot;description&quot;:&quot;fiat lux&quot;,&quot;id&quot;:117,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4}],&quot;name&quot;:&quot;light-side&quot;,&quot;id&quot;:3},{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;kilimanjaro&quot;,&quot;description&quot;:&quot;it isn't the mountains ahead to climb that wear you out, it's the pebble in your shoe&quot;,&quot;id&quot;:121,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;half dome&quot;,&quot;description&quot;:&quot;faith moves mountains&quot;,&quot;id&quot;:122,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;denali&quot;,&quot;description&quot;:&quot;you can't move mountains by whispering at them&quot;,&quot;id&quot;:123,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:4},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;meru&quot;,&quot;description&quot;:&quot;every mountain top is within reach if you just keep climbing&quot;,&quot;id&quot;:124,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:4}],&quot;name&quot;:&quot;dark-side&quot;,&quot;id&quot;:4}]}, reason: actual value is not map-like</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: BookItTests.feature:31 - path: $, actual: [{&quot;location&quot;:&quot;VA&quot;,&quot;id&quot;:1,&quot;clusters&quot;:[{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;mit&quot;,&quot;description&quot;:&quot;mens et manus&quot;,&quot;id&quot;:111,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;harvard&quot;,&quot;description&quot;:&quot;veritas&quot;,&quot;id&quot;:112,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;yale&quot;,&quot;description&quot;:&quot;lux et veritas&quot;,&quot;id&quot;:113,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;princeton&quot;,&quot;description&quot;:&quot;dei sub numine viget&quot;,&quot;id&quot;:114,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4},{&quot;withTV&quot;:false,&quot;name&quot;:&quot;stanford&quot;,&quot;description&quot;:&quot;die luft der freiheit weht&quot;,&quot;id&quot;:115,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;duke&quot;,&quot;description&quot;:&quot;eruditio et religio&quot;,&quot;id&quot;:116,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;berkeley&quot;,&quot;description&quot;:&quot;fiat lux&quot;,&quot;id&quot;:117,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4}],&quot;name&quot;:&quot;light-side&quot;,&quot;id&quot;:3},{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;kilimanjaro&quot;,&quot;description&quot;:&quot;it isn't the mountains ahead to climb that wear you out, it's the pebble in your shoe&quot;,&quot;id&quot;:121,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;half dome&quot;,&quot;description&quot;:&quot;faith moves mountains&quot;,&quot;id&quot;:122,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;denali&quot;,&quot;description&quot;:&quot;you can't move mountains by whispering at them&quot;,&quot;id&quot;:123,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:4},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;meru&quot;,&quot;description&quot;:&quot;every mountain top is within reach if you just keep climbing&quot;,&quot;id&quot;:124,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:4}],&quot;name&quot;:&quot;dark-side&quot;,&quot;id&quot;:4}]},{&quot;location&quot;:&quot;IL&quot;,&quot;id&quot;:2,&quot;clusters&quot;:[{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;google&quot;,&quot;description&quot;:&quot;don't be evil&quot;,&quot;id&quot;:211,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;apple&quot;,&quot;description&quot;:&quot;think different&quot;,&quot;id&quot;:212,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;microsoft&quot;,&quot;description&quot;:&quot;be what's next&quot;,&quot;id&quot;:213,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;bay_area&quot;,&quot;description&quot;:&quot;make future&quot;,&quot;id&quot;:214,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;amazon&quot;,&quot;description&quot;:&quot;work hard. have fun. make history&quot;,&quot;id&quot;:215,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;tesla&quot;,&quot;description&quot;:&quot;just do it&quot;,&quot;id&quot;:216,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;facebook&quot;,&quot;description&quot;:&quot;move fast and break things&quot;,&quot;id&quot;:217,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6}],&quot;name&quot;:&quot;il&quot;,&quot;id&quot;:5}]}], expected: {location=VA, id=1, clusters=[{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;mit&quot;,&quot;description&quot;:&quot;mens et manus&quot;,&quot;id&quot;:111,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;harvard&quot;,&quot;description&quot;:&quot;veritas&quot;,&quot;id&quot;:112,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;yale&quot;,&quot;description&quot;:&quot;lux et veritas&quot;,&quot;id&quot;:113,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;princeton&quot;,&quot;description&quot;:&quot;dei sub numine viget&quot;,&quot;id&quot;:114,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4},{&quot;withTV&quot;:false,&quot;name&quot;:&quot;stanford&quot;,&quot;description&quot;:&quot;die luft der freiheit weht&quot;,&quot;id&quot;:115,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;duke&quot;,&quot;description&quot;:&quot;eruditio et religio&quot;,&quot;id&quot;:116,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;berkeley&quot;,&quot;description&quot;:&quot;fiat lux&quot;,&quot;id&quot;:117,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4}],&quot;name&quot;:&quot;light-side&quot;,&quot;id&quot;:3},{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;kilimanjaro&quot;,&quot;description&quot;:&quot;it isn't the mountains ahead to climb that wear you out, it's the pebble in your shoe&quot;,&quot;id&quot;:121,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;half dome&quot;,&quot;description&quot;:&quot;faith moves mountains&quot;,&quot;id&quot;:122,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;denali&quot;,&quot;description&quot;:&quot;you can't move mountains by whispering at them&quot;,&quot;id&quot;:123,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:4},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;meru&quot;,&quot;description&quot;:&quot;every mountain top is within reach if you just keep climbing&quot;,&quot;id&quot;:124,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:4}],&quot;name&quot;:&quot;dark-side&quot;,&quot;id&quot;:4}]}, reason: actual value is not map-like</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>22:05:35.234 assertion failed: path: $, actual: [{&quot;location&quot;:&quot;VA&quot;,&quot;id&quot;:1,&quot;clusters&quot;:[{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;mit&quot;,&quot;description&quot;:&quot;mens et manus&quot;,&quot;id&quot;:111,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;harvard&quot;,&quot;description&quot;:&quot;veritas&quot;,&quot;id&quot;:112,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;yale&quot;,&quot;description&quot;:&quot;lux et veritas&quot;,&quot;id&quot;:113,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;princeton&quot;,&quot;description&quot;:&quot;dei sub numine viget&quot;,&quot;id&quot;:114,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4},{&quot;withTV&quot;:false,&quot;name&quot;:&quot;stanford&quot;,&quot;description&quot;:&quot;die luft der freiheit weht&quot;,&quot;id&quot;:115,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;duke&quot;,&quot;description&quot;:&quot;eruditio et religio&quot;,&quot;id&quot;:116,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;berkeley&quot;,&quot;description&quot;:&quot;fiat lux&quot;,&quot;id&quot;:117,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4}],&quot;name&quot;:&quot;light-side&quot;,&quot;id&quot;:3},{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;kilimanjaro&quot;,&quot;description&quot;:&quot;it isn't the mountains ahead to climb that wear you out, it's the pebble in your shoe&quot;,&quot;id&quot;:121,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;half dome&quot;,&quot;description&quot;:&quot;faith moves mountains&quot;,&quot;id&quot;:122,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;denali&quot;,&quot;description&quot;:&quot;you can't move mountains by whispering at them&quot;,&quot;id&quot;:123,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:4},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;meru&quot;,&quot;description&quot;:&quot;every mountain top is within reach if you just keep climbing&quot;,&quot;id&quot;:124,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:4}],&quot;name&quot;:&quot;dark-side&quot;,&quot;id&quot;:4}]},{&quot;location&quot;:&quot;IL&quot;,&quot;id&quot;:2,&quot;clusters&quot;:[{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;google&quot;,&quot;description&quot;:&quot;don't be evil&quot;,&quot;id&quot;:211,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;apple&quot;,&quot;description&quot;:&quot;think different&quot;,&quot;id&quot;:212,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;microsoft&quot;,&quot;description&quot;:&quot;be what's next&quot;,&quot;id&quot;:213,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;bay_area&quot;,&quot;description&quot;:&quot;make future&quot;,&quot;id&quot;:214,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;amazon&quot;,&quot;description&quot;:&quot;work hard. have fun. make history&quot;,&quot;id&quot;:215,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;tesla&quot;,&quot;description&quot;:&quot;just do it&quot;,&quot;id&quot;:216,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;facebook&quot;,&quot;description&quot;:&quot;move fast and break things&quot;,&quot;id&quot;:217,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6}],&quot;name&quot;:&quot;il&quot;,&quot;id&quot;:5}]}], expected: {location=VA, id=1, clusters=[{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;mit&quot;,&quot;description&quot;:&quot;mens et manus&quot;,&quot;id&quot;:111,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;harvard&quot;,&quot;description&quot;:&quot;veritas&quot;,&quot;id&quot;:112,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;yale&quot;,&quot;description&quot;:&quot;lux et veritas&quot;,&quot;id&quot;:113,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;princeton&quot;,&quot;description&quot;:&quot;dei sub numine viget&quot;,&quot;id&quot;:114,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4},{&quot;withTV&quot;:false,&quot;name&quot;:&quot;stanford&quot;,&quot;description&quot;:&quot;die luft der freiheit weht&quot;,&quot;id&quot;:115,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;duke&quot;,&quot;description&quot;:&quot;eruditio et religio&quot;,&quot;id&quot;:116,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;berkeley&quot;,&quot;description&quot;:&quot;fiat lux&quot;,&quot;id&quot;:117,&quot;withWhiteBoard&quot;:false,&quot;capacity&quot;:4}],&quot;name&quot;:&quot;light-side&quot;,&quot;id&quot;:3},{&quot;rooms&quot;:[{&quot;withTV&quot;:true,&quot;name&quot;:&quot;kilimanjaro&quot;,&quot;description&quot;:&quot;it isn't the mountains ahead to climb that wear you out, it's the pebble in your shoe&quot;,&quot;id&quot;:121,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;half dome&quot;,&quot;description&quot;:&quot;faith moves mountains&quot;,&quot;id&quot;:122,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:6},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;denali&quot;,&quot;description&quot;:&quot;you can't move mountains by whispering at them&quot;,&quot;id&quot;:123,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:4},{&quot;withTV&quot;:true,&quot;name&quot;:&quot;meru&quot;,&quot;description&quot;:&quot;every mountain top is within reach if you just keep climbing&quot;,&quot;id&quot;:124,&quot;withWhiteBoard&quot;:true,&quot;capacity&quot;:4}],&quot;name&quot;:&quot;dark-side&quot;,&quot;id&quot;:4}]}, reason: actual value is not map-like</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+<testsuite failures="0" name="src/test/java/features/FirstKarateTest.feature" skipped="0" tests="1" time="0.190695">
+  <testcase classname="src.test.java.features.FirstKarateTest" name="Spartan variable" time="0.190695">
+    <system-out>* def spartan = ........................................................... passed
+* print spartan.id ........................................................ passed
+* print spartan.phone ..................................................... passed</system-out>
+  </testcase>
+</testsuite>

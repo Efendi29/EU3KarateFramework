@@ -1,0 +1,14 @@
+<testsuite failures="0" name="src/test/java/features/ApiTest1.feature" skipped="0" tests="1" time="1.530978">
+  <testcase classname="src.test.java.features.ApiTest1" name="json body verification" time="1.530978">
+    <system-out>Given url 'https://api.exchangeratesapi.io/2010-01-12' .................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match header Content-Type == 'application/json' ....................... passed
+And print response ........................................................ passed
+And print response.base ................................................... passed
+And match response.base == 'EUR' .......................................... passed
+And print response.rates .................................................. passed
+And match response.rates.USD == '#present' ................................ passed
+And match response.rates.USD == 1.4481 .................................... passed</system-out>
+  </testcase>
+</testsuite>

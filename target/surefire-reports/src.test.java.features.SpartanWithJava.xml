@@ -1,0 +1,8 @@
+<testsuite failures="0" name="src/test/java/features/SpartanWithJava.feature" skipped="0" tests="1" time="0.436269">
+  <testcase classname="src.test.java.features.SpartanWithJava" name="reading java methods" time="0.436269">
+    <system-out>* def spartanUrl = 'http://52.55.102.92:8000' ............................. passed
+* def SDG = Java.type('utilities.SpartanDataGenerator') ................... passed
+* def newSpartan = SDG.createSpartan() .................................... passed
+* print newSpartan ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

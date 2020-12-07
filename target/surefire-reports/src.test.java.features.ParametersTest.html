@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.features.ParametersTest</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">1</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2020-12-06 09:15:31 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[7:75]">[7:75] hr regions examples </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/features/ParametersTest.feature</span><span class="feature-description">Parameters examples</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[7:75]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">wip</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario: [7:75]</span><span class="scenario-name">hr regions examples </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1187</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[7:75]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[7:75]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* def baseUrl = 'https://api.exchangeratesapi.io'</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">21:15:29.664 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[7:75]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* def spartanUrl = 'http://100.25.192.1:8000'</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row" data-parent="[7:75]bg">
+                        <div class="step-container" id="3">
+                            <div class="step-ref bg-step">3</div>
+                            <div class="step-cell passed">* def hrUrl = 'http://100.25.192.1:1000/ords/hr'</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">Given url hrUrl</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">And path 'regions'</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">1146</div>
+                    </div>
+                    <div class="preformatted" data-parent="6">21:15:30.171 request:
+1 &gt; GET http://100.25.192.1:1000/ords/hr/regions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: 100.25.192.1:1000
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+21:15:30.547 response time in milliseconds: 372.81
+1 &lt; 301
+1 &lt; Location: http://100.25.192.1:1000/ords/hr/regions/
+1 &lt; Transfer-Encoding: chunked
+
+21:15:30.553 request:
+2 &gt; GET http://100.25.192.1:1000/ords/hr/regions
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: 100.25.192.1:1000
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+21:15:30.815 response time in milliseconds: 259.34
+2 &lt; 200
+2 &lt; Content-Type: application/json
+2 &lt; Date: Sun, 06 Dec 2020 20:15:27 GMT
+2 &lt; ETag: "W3AvJo9pjVymzCrhCDEOH/u4KYcri7KX9sbRLwetW7cZvU1znBZSxVH+CCtUj7Y4JFiRMUk9sxwqGrGyJ3JpbA=="
+2 &lt; Transfer-Encoding: chunked
+{"items":[{"region_id":1,"region_name":"Europe","links":[{"rel":"self","href":"http://100.25.192.1:1000/ords/hr/regions/1"}]},{"region_id":2,"region_name":"Americas","links":[{"rel":"self","href":"http://100.25.192.1:1000/ords/hr/regions/2"}]},{"region_id":3,"region_name":"Asia","links":[{"rel":"self","href":"http://100.25.192.1:1000/ords/hr/regions/3"}]},{"region_id":4,"region_name":"Middle East and Africa","links":[{"rel":"self","href":"http://100.25.192.1:1000/ords/hr/regions/4"}]},{"region_id":10,"region_name":"Cybertek Germany","links":[{"rel":"self","href":"http://100.25.192.1:1000/ords/hr/regions/10"}]}],"hasMore":false,"limit":25,"offset":0,"count":5,"links":[{"rel":"self","href":"http://100.25.192.1:1000/ords/hr/regions/"},{"rel":"edit","href":"http://100.25.192.1:1000/ords/hr/regions/"},{"rel":"describedby","href":"http://100.25.192.1:1000/ords/hr/metadata-catalog/regions/"},{"rel":"first","href":"http://100.25.192.1:1000/ords/hr/regions/"}]}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment">#And print response</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">And match response.limit == 25</div>
+                        </div>
+                        <div class="time-cell passed">14</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
+                            <div class="step-cell passed">And print each response.items.region_id == '#number'</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="preformatted" data-parent="9">21:15:30.873 [print]</div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

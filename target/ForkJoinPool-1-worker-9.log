@@ -1,0 +1,945 @@
+22:09:04.428 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+22:09:05.081 request:
+1 > GET https://api.exchangeratesapi.io/latest
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.exchangeratesapi.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+22:09:05.460 response time in milliseconds: 374.96
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Methods: GET
+1 < Access-Control-Allow-Origin: *
+1 < Age: 2291
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 5fe139c548661649-MUC
+1 < Cache-Control: max-age=1800
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 07 Dec 2020 21:09:05 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=R9NH6D2LwN33UmBmpjGnOHhAD1CQWq2PwVFa%2B18WEiaQU%2Bo3iBpEOm6s2ZaPqEPOmlvljGjaQg7o9PlkcQJh6kGxfdVRRRpTUordOyFINNk6I7pRQ90WWw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d6d438e02b2da8e98e86b2bff83a6395a1607375345; expires=Wed, 06-Jan-21 21:09:05 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < cf-request-id: 06e0a26f5300001649d1112000000001
+{"rates":{"CAD":1.5537,"HKD":9.3999,"ISK":152.7,"PHP":58.421,"DKK":7.4433,"HUF":359.49,"CZK":26.482,"AUD":1.6374,"RON":4.8735,"SEK":10.2018,"IDR":17214.85,"INR":89.6285,"BRL":6.2124,"RUB":89.79,"HRK":7.54,"JPY":126.3,"THB":36.669,"CHF":1.0802,"SGD":1.6212,"PLN":4.467,"BGN":1.9558,"TRY":9.5053,"CNY":7.931,"NOK":10.6328,"NZD":1.7252,"ZAR":18.4244,"USD":1.2128,"MXN":24.0901,"ILS":3.9562,"GBP":0.91215,"KRW":1316.88,"MYR":4.9385},"base":"EUR","date":"2020-12-07"}
+
+22:09:05.477 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+22:09:05.480 request:
+1 > GET https://api.exchangeratesapi.io/2010-01-12
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.exchangeratesapi.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+22:09:05.586 response time in milliseconds: 105.19
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Methods: GET
+1 < Access-Control-Allow-Origin: *
+1 < Age: 1040
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 5fe139c649061ba5-MUC
+1 < Cache-Control: max-age=1800
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 07 Dec 2020 21:09:05 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=RcG1JW0ApyuaN%2BEhmLzdQ0wEY3Uvl59tCi4ISycXzsWdvYV1xLnNy7liOdeXGogti1SZX503blby%2FLerhT1XGz4tSc4h0thZdhtVExDa0%2BOX1lHdSZrtIQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d9d8fb62379c540699e3c014f5131a5881607375345; expires=Wed, 06-Jan-21 21:09:05 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < cf-request-id: 06e0a26fec00001ba5a90f4000000001
+{"rates":{"CAD":1.4959,"HKD":11.2301,"LVL":0.7093,"PHP":66.106,"DKK":7.4405,"HUF":268.18,"CZK":26.258,"AUD":1.5668,"RON":4.1405,"SEK":10.2215,"IDR":13281.14,"INR":66.21,"BRL":2.5309,"RUB":42.6974,"LTL":3.4528,"JPY":132.41,"THB":47.839,"CHF":1.4743,"SGD":2.0133,"PLN":4.0838,"BGN":1.9558,"TRY":2.1084,"CNY":9.8863,"NOK":8.1825,"NZD":1.9573,"ZAR":10.8264,"USD":1.4481,"MXN":18.4995,"EEK":15.6466,"GBP":0.8972,"KRW":1627.4,"MYR":4.8424,"HRK":7.2753},"base":"EUR","date":"2010-01-12"}
+
+22:09:05.589 [print] {
+  "date": "2010-01-12",
+  "rates": {
+    "CHF": 1.4743,
+    "HRK": 7.2753,
+    "MXN": 18.4995,
+    "LVL": 0.7093,
+    "LTL": 3.4528,
+    "ZAR": 10.8264,
+    "INR": 66.21,
+    "THB": 47.839,
+    "CNY": 9.8863,
+    "AUD": 1.5668,
+    "KRW": 1627.4,
+    "JPY": 132.41,
+    "PLN": 4.0838,
+    "GBP": 0.8972,
+    "IDR": 13281.14,
+    "HUF": 268.18,
+    "PHP": 66.106,
+    "TRY": 2.1084,
+    "RUB": 42.6974,
+    "HKD": 11.2301,
+    "DKK": 7.4405,
+    "CAD": 1.4959,
+    "USD": 1.4481,
+    "MYR": 4.8424,
+    "BGN": 1.9558,
+    "EEK": 15.6466,
+    "NOK": 8.1825,
+    "RON": 4.1405,
+    "SGD": 2.0133,
+    "CZK": 26.258,
+    "SEK": 10.2215,
+    "NZD": 1.9573,
+    "BRL": 2.5309
+  },
+  "base": "EUR"
+}
+
+22:09:05.596 [print] EUR
+22:09:05.605 [print] {
+  "CHF": 1.4743,
+  "HRK": 7.2753,
+  "MXN": 18.4995,
+  "LVL": 0.7093,
+  "LTL": 3.4528,
+  "ZAR": 10.8264,
+  "INR": 66.21,
+  "THB": 47.839,
+  "CNY": 9.8863,
+  "AUD": 1.5668,
+  "KRW": 1627.4,
+  "JPY": 132.41,
+  "PLN": 4.0838,
+  "GBP": 0.8972,
+  "IDR": 13281.14,
+  "HUF": 268.18,
+  "PHP": 66.106,
+  "TRY": 2.1084,
+  "RUB": 42.6974,
+  "HKD": 11.2301,
+  "DKK": 7.4405,
+  "CAD": 1.4959,
+  "USD": 1.4481,
+  "MYR": 4.8424,
+  "BGN": 1.9558,
+  "EEK": 15.6466,
+  "NOK": 8.1825,
+  "RON": 4.1405,
+  "SGD": 2.0133,
+  "CZK": 26.258,
+  "SEK": 10.2215,
+  "NZD": 1.9573,
+  "BRL": 2.5309
+}
+
+22:09:05.609 [print] 1.4481
+22:09:05.620 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+22:09:05.629 request:
+1 > GET http://100.25.192.1:8000/api/spartans
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 100.25.192.1:8000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+22:09:06.132 response time in milliseconds: 378.64
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Mon, 07 Dec 2020 21:09:01 GMT
+1 < Transfer-Encoding: chunked
+[{"id":117,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":1,"name":"Meade","gender":"Male","phone":3584128232},{"id":2,"name":"Nels","gender":"Male","phone":4218971348},{"id":3,"name":"Fidole","gender":"Male","phone":6105035231},{"id":4,"name":"Paige","gender":"Female","phone":3786741487},{"id":5,"name":"Blythe","gender":"Female","phone":3677539542},{"id":6,"name":"Tedmund","gender":"Male","phone":2227140732},{"id":7,"name":"Hershel","gender":"Male","phone":5278678322},{"id":8,"name":"Rodolfo","gender":"Male","phone":9601637574},{"id":9,"name":"Florrie","gender":"Female","phone":1702025787},{"id":10,"name":"Lorenza","gender":"Female","phone":3312820936},{"id":11,"name":"Nona","gender":"Female","phone":7959094216},{"id":12,"name":"Sol","gender":"Male","phone":7006438852},{"id":13,"name":"Jaimie","gender":"Female","phone":7842554879},{"id":14,"name":"Grenville","gender":"Male","phone":1065669615},{"id":15,"name":"Meta","gender":"Female","phone":1938695106},{"id":16,"name":"Sinclair","gender":"Male","phone":9714460354},{"id":17,"name":"Wash","gender":"Male","phone":4978976378},{"id":18,"name":"Allen","gender":"Male","phone":8716150217},{"id":19,"name":"Bunnie","gender":"Female","phone":7662992732},{"id":20,"name":"Lothario","gender":"Male","phone":7551551687},{"id":21,"name":"Mark","gender":"Male","phone":1852873386},{"id":22,"name":"Koenraad","gender":"Male","phone":8451740840},{"id":23,"name":"Mervin","gender":"Male","phone":9098436816},{"id":24,"name":"Julio","gender":"Male","phone":9393139934},{"id":25,"name":"Valentin","gender":"Male","phone":1536037088},{"id":26,"name":"Correy","gender":"Female","phone":7823876031},{"id":27,"name":"Jeanelle","gender":"Female","phone":6662999903},{"id":28,"name":"Woodrow","gender":"Male","phone":7411659821},{"id":29,"name":"Dorelle","gender":"Female","phone":6687391932},{"id":30,"name":"Melania","gender":"Female","phone":8916944276},{"id":31,"name":"Maressa","gender":"Female","phone":2018031787},{"id":32,"name":"Tessie","gender":"Female","phone":9545879168},{"id":33,"name":"Wilek","gender":"Male","phone":2877865902},{"id":34,"name":"Tucky","gender":"Male","phone":2935099804},{"id":35,"name":"Gardiner","gender":"Male","phone":3751113352},{"id":36,"name":"Sylas","gender":"Male","phone":9853891474},{"id":37,"name":"Grannie","gender":"Male","phone":1075127669},{"id":38,"name":"Juan","gender":"Male","phone":9614487605},{"id":39,"name":"Eveleen","gender":"Female","phone":1362642898},{"id":40,"name":"Druci","gender":"Female","phone":4507606768},{"id":41,"name":"Rosy","gender":"Female","phone":6721964988},{"id":42,"name":"Atlante","gender":"Female","phone":4579688654},{"id":43,"name":"Reid","gender":"Male","phone":8833893900},{"id":44,"name":"Panchito","gender":"Male","phone":7486765293},{"id":45,"name":"Heddie","gender":"Female","phone":1271425843},{"id":46,"name":"Delora","gender":"Female","phone":4115324496},{"id":47,"name":"Domenic","gender":"Male","phone":3952704485},{"id":48,"name":"Wyatt","gender":"Male","phone":7682768714},{"id":49,"name":"Reinaldo","gender":"Male","phone":3623233145},{"id":50,"name":"Jennica","gender":"Female","phone":6986436734},{"id":51,"name":"Padriac","gender":"Male","phone":8444611168},{"id":52,"name":"Tome","gender":"Male","phone":5654109704},{"id":53,"name":"Berna","gender":"Female","phone":2072918455},{"id":54,"name":"Bevon","gender":"Male","phone":9831834168},{"id":55,"name":"Karmen","gender":"Female","phone":5052029186},{"id":56,"name":"Ewan","gender":"Male","phone":5733729948},{"id":57,"name":"Freida","gender":"Female","phone":5712679899},{"id":58,"name":"Alfy","gender":"Female","phone":6529078662},{"id":59,"name":"Mickey","gender":"Male","phone":8775768925},{"id":60,"name":"Elisabeth","gender":"Female","phone":8165224005},{"id":61,"name":"Earlie","gender":"Male","phone":5709633007},{"id":62,"name":"Robinia","gender":"Female","phone":3542611707},{"id":63,"name":"Clayton","gender":"Male","phone":1782167106},{"id":64,"name":"Putnam","gender":"Male","phone":6744135688},{"id":65,"name":"Sean","gender":"Male","phone":8566508311},{"id":66,"name":"Quentin","gender":"Male","phone":3159018391},{"id":67,"name":"Janette","gender":"Female","phone":9887020445},{"id":68,"name":"Adda","gender":"Female","phone":5361981152},{"id":69,"name":"Elinor","gender":"Female","phone":3161765672},{"id":70,"name":"Abbey","gender":"Male","phone":1259516767},{"id":71,"name":"Collen","gender":"Female","phone":9614634242},{"id":72,"name":"Orion","gender":"Male","phone":7485352272},{"id":73,"name":"Amalita","gender":"Female","phone":2663607211},{"id":74,"name":"Chen","gender":"Male","phone":9537864587},{"id":75,"name":"Leland","gender":"Female","phone":9672110769},{"id":76,"name":"Arnie","gender":"Male","phone":4541117370},{"id":77,"name":"Stevana","gender":"Female","phone":1459126818},{"id":78,"name":"Cob","gender":"Male","phone":1853354209},{"id":79,"name":"Philis","gender":"Female","phone":2277085963},{"id":80,"name":"Jocelin","gender":"Female","phone":4299058649},{"id":81,"name":"Georgianne","gender":"Female","phone":9594130239},{"id":82,"name":"Catie","gender":"Female","phone":4758237746},{"id":83,"name":"Franky","gender":"Male","phone":7647130621},{"id":84,"name":"Saw","gender":"Male","phone":2673833440},{"id":85,"name":"Ingamar","gender":"Male","phone":6835038785},{"id":86,"name":"Brook","gender":"Female","phone":2655095364},{"id":87,"name":"Fenelia","gender":"Female","phone":6475942543},{"id":88,"name":"Julie","gender":"Male","phone":1279288759},{"id":89,"name":"Adan","gender":"Male","phone":1111111111},{"id":90,"name":"TJ","gender":"Male","phone":1321231236},{"id":91,"name":"Jaquenetta","gender":"Female","phone":7338210388},{"id":92,"name":"Caitlin","gender":"Female","phone":6911121800},{"id":93,"name":"Chanda","gender":"Female","phone":9289012086},{"id":94,"name":"Marylee","gender":"Female","phone":6385380284},{"id":95,"name":"Lilias","gender":"Female","phone":5986446659},{"id":96,"name":"Abie","gender":"Male","phone":1788387111},{"id":97,"name":"Saleem","gender":"Male","phone":6586151920},{"id":98,"name":"Elita","gender":"Female","phone":1042902741},{"id":99,"name":"Adair","gender":"Male","phone":3154964396},{"id":111,"name":"MikeEU3","gender":"Male","phone":8877445596},{"id":112,"name":"MikeEU3","gender":"Male","phone":8877445596},{"id":102,"name":"MikeSmith","gender":"Male","phone":7035714586},{"id":104,"name":"MikeSmith","gender":"Male","phone":7035714586},{"id":113,"name":"Adan","gender":"Male","phone":1111111111},{"id":115,"name":"PutName","gender":"Male","phone":1321231236},{"id":103,"name":"MikeSmith","gender":"Male","phone":7035714586},{"id":105,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":106,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":107,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":108,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":109,"name":"MikeEU2","gender":"Male","phone":8877445596},{"id":110,"name":"MikeEU2","gender":"Male","phone":8877445596},{"id":114,"name":"Adan","gender":"Male","phone":1111111111}]
+
+22:09:06.139 [print] [
+  {
+    "gender": "Female",
+    "phone": 3123781237,
+    "name": "Lorenza",
+    "id": 117
+  },
+  {
+    "gender": "Male",
+    "phone": 3584128232,
+    "name": "Meade",
+    "id": 1
+  },
+  {
+    "gender": "Male",
+    "phone": 4218971348,
+    "name": "Nels",
+    "id": 2
+  },
+  {
+    "gender": "Male",
+    "phone": 6105035231,
+    "name": "Fidole",
+    "id": 3
+  },
+  {
+    "gender": "Female",
+    "phone": 3786741487,
+    "name": "Paige",
+    "id": 4
+  },
+  {
+    "gender": "Female",
+    "phone": 3677539542,
+    "name": "Blythe",
+    "id": 5
+  },
+  {
+    "gender": "Male",
+    "phone": 2227140732,
+    "name": "Tedmund",
+    "id": 6
+  },
+  {
+    "gender": "Male",
+    "phone": 5278678322,
+    "name": "Hershel",
+    "id": 7
+  },
+  {
+    "gender": "Male",
+    "phone": 9601637574,
+    "name": "Rodolfo",
+    "id": 8
+  },
+  {
+    "gender": "Female",
+    "phone": 1702025787,
+    "name": "Florrie",
+    "id": 9
+  },
+  {
+    "gender": "Female",
+    "phone": 3312820936,
+    "name": "Lorenza",
+    "id": 10
+  },
+  {
+    "gender": "Female",
+    "phone": 7959094216,
+    "name": "Nona",
+    "id": 11
+  },
+  {
+    "gender": "Male",
+    "phone": 7006438852,
+    "name": "Sol",
+    "id": 12
+  },
+  {
+    "gender": "Female",
+    "phone": 7842554879,
+    "name": "Jaimie",
+    "id": 13
+  },
+  {
+    "gender": "Male",
+    "phone": 1065669615,
+    "name": "Grenville",
+    "id": 14
+  },
+  {
+    "gender": "Female",
+    "phone": 1938695106,
+    "name": "Meta",
+    "id": 15
+  },
+  {
+    "gender": "Male",
+    "phone": 9714460354,
+    "name": "Sinclair",
+    "id": 16
+  },
+  {
+    "gender": "Male",
+    "phone": 4978976378,
+    "name": "Wash",
+    "id": 17
+  },
+  {
+    "gender": "Male",
+    "phone": 8716150217,
+    "name": "Allen",
+    "id": 18
+  },
+  {
+    "gender": "Female",
+    "phone": 7662992732,
+    "name": "Bunnie",
+    "id": 19
+  },
+  {
+    "gender": "Male",
+    "phone": 7551551687,
+    "name": "Lothario",
+    "id": 20
+  },
+  {
+    "gender": "Male",
+    "phone": 1852873386,
+    "name": "Mark",
+    "id": 21
+  },
+  {
+    "gender": "Male",
+    "phone": 8451740840,
+    "name": "Koenraad",
+    "id": 22
+  },
+  {
+    "gender": "Male",
+    "phone": 9098436816,
+    "name": "Mervin",
+    "id": 23
+  },
+  {
+    "gender": "Male",
+    "phone": 9393139934,
+    "name": "Julio",
+    "id": 24
+  },
+  {
+    "gender": "Male",
+    "phone": 1536037088,
+    "name": "Valentin",
+    "id": 25
+  },
+  {
+    "gender": "Female",
+    "phone": 7823876031,
+    "name": "Correy",
+    "id": 26
+  },
+  {
+    "gender": "Female",
+    "phone": 6662999903,
+    "name": "Jeanelle",
+    "id": 27
+  },
+  {
+    "gender": "Male",
+    "phone": 7411659821,
+    "name": "Woodrow",
+    "id": 28
+  },
+  {
+    "gender": "Female",
+    "phone": 6687391932,
+    "name": "Dorelle",
+    "id": 29
+  },
+  {
+    "gender": "Female",
+    "phone": 8916944276,
+    "name": "Melania",
+    "id": 30
+  },
+  {
+    "gender": "Female",
+    "phone": 2018031787,
+    "name": "Maressa",
+    "id": 31
+  },
+  {
+    "gender": "Female",
+    "phone": 9545879168,
+    "name": "Tessie",
+    "id": 32
+  },
+  {
+    "gender": "Male",
+    "phone": 2877865902,
+    "name": "Wilek",
+    "id": 33
+  },
+  {
+    "gender": "Male",
+    "phone": 2935099804,
+    "name": "Tucky",
+    "id": 34
+  },
+  {
+    "gender": "Male",
+    "phone": 3751113352,
+    "name": "Gardiner",
+    "id": 35
+  },
+  {
+    "gender": "Male",
+    "phone": 9853891474,
+    "name": "Sylas",
+    "id": 36
+  },
+  {
+    "gender": "Male",
+    "phone": 1075127669,
+    "name": "Grannie",
+    "id": 37
+  },
+  {
+    "gender": "Male",
+    "phone": 9614487605,
+    "name": "Juan",
+    "id": 38
+  },
+  {
+    "gender": "Female",
+    "phone": 1362642898,
+    "name": "Eveleen",
+    "id": 39
+  },
+  {
+    "gender": "Female",
+    "phone": 4507606768,
+    "name": "Druci",
+    "id": 40
+  },
+  {
+    "gender": "Female",
+    "phone": 6721964988,
+    "name": "Rosy",
+    "id": 41
+  },
+  {
+    "gender": "Female",
+    "phone": 4579688654,
+    "name": "Atlante",
+    "id": 42
+  },
+  {
+    "gender": "Male",
+    "phone": 8833893900,
+    "name": "Reid",
+    "id": 43
+  },
+  {
+    "gender": "Male",
+    "phone": 7486765293,
+    "name": "Panchito",
+    "id": 44
+  },
+  {
+    "gender": "Female",
+    "phone": 1271425843,
+    "name": "Heddie",
+    "id": 45
+  },
+  {
+    "gender": "Female",
+    "phone": 4115324496,
+    "name": "Delora",
+    "id": 46
+  },
+  {
+    "gender": "Male",
+    "phone": 3952704485,
+    "name": "Domenic",
+    "id": 47
+  },
+  {
+    "gender": "Male",
+    "phone": 7682768714,
+    "name": "Wyatt",
+    "id": 48
+  },
+  {
+    "gender": "Male",
+    "phone": 3623233145,
+    "name": "Reinaldo",
+    "id": 49
+  },
+  {
+    "gender": "Female",
+    "phone": 6986436734,
+    "name": "Jennica",
+    "id": 50
+  },
+  {
+    "gender": "Male",
+    "phone": 8444611168,
+    "name": "Padriac",
+    "id": 51
+  },
+  {
+    "gender": "Male",
+    "phone": 5654109704,
+    "name": "Tome",
+    "id": 52
+  },
+  {
+    "gender": "Female",
+    "phone": 2072918455,
+    "name": "Berna",
+    "id": 53
+  },
+  {
+    "gender": "Male",
+    "phone": 9831834168,
+    "name": "Bevon",
+    "id": 54
+  },
+  {
+    "gender": "Female",
+    "phone": 5052029186,
+    "name": "Karmen",
+    "id": 55
+  },
+  {
+    "gender": "Male",
+    "phone": 5733729948,
+    "name": "Ewan",
+    "id": 56
+  },
+  {
+    "gender": "Female",
+    "phone": 5712679899,
+    "name": "Freida",
+    "id": 57
+  },
+  {
+    "gender": "Female",
+    "phone": 6529078662,
+    "name": "Alfy",
+    "id": 58
+  },
+  {
+    "gender": "Male",
+    "phone": 8775768925,
+    "name": "Mickey",
+    "id": 59
+  },
+  {
+    "gender": "Female",
+    "phone": 8165224005,
+    "name": "Elisabeth",
+    "id": 60
+  },
+  {
+    "gender": "Male",
+    "phone": 5709633007,
+    "name": "Earlie",
+    "id": 61
+  },
+  {
+    "gender": "Female",
+    "phone": 3542611707,
+    "name": "Robinia",
+    "id": 62
+  },
+  {
+    "gender": "Male",
+    "phone": 1782167106,
+    "name": "Clayton",
+    "id": 63
+  },
+  {
+    "gender": "Male",
+    "phone": 6744135688,
+    "name": "Putnam",
+    "id": 64
+  },
+  {
+    "gender": "Male",
+    "phone": 8566508311,
+    "name": "Sean",
+    "id": 65
+  },
+  {
+    "gender": "Male",
+    "phone": 3159018391,
+    "name": "Quentin",
+    "id": 66
+  },
+  {
+    "gender": "Female",
+    "phone": 9887020445,
+    "name": "Janette",
+    "id": 67
+  },
+  {
+    "gender": "Female",
+    "phone": 5361981152,
+    "name": "Adda",
+    "id": 68
+  },
+  {
+    "gender": "Female",
+    "phone": 3161765672,
+    "name": "Elinor",
+    "id": 69
+  },
+  {
+    "gender": "Male",
+    "phone": 1259516767,
+    "name": "Abbey",
+    "id": 70
+  },
+  {
+    "gender": "Female",
+    "phone": 9614634242,
+    "name": "Collen",
+    "id": 71
+  },
+  {
+    "gender": "Male",
+    "phone": 7485352272,
+    "name": "Orion",
+    "id": 72
+  },
+  {
+    "gender": "Female",
+    "phone": 2663607211,
+    "name": "Amalita",
+    "id": 73
+  },
+  {
+    "gender": "Male",
+    "phone": 9537864587,
+    "name": "Chen",
+    "id": 74
+  },
+  {
+    "gender": "Female",
+    "phone": 9672110769,
+    "name": "Leland",
+    "id": 75
+  },
+  {
+    "gender": "Male",
+    "phone": 4541117370,
+    "name": "Arnie",
+    "id": 76
+  },
+  {
+    "gender": "Female",
+    "phone": 1459126818,
+    "name": "Stevana",
+    "id": 77
+  },
+  {
+    "gender": "Male",
+    "phone": 1853354209,
+    "name": "Cob",
+    "id": 78
+  },
+  {
+    "gender": "Female",
+    "phone": 2277085963,
+    "name": "Philis",
+    "id": 79
+  },
+  {
+    "gender": "Female",
+    "phone": 4299058649,
+    "name": "Jocelin",
+    "id": 80
+  },
+  {
+    "gender": "Female",
+    "phone": 9594130239,
+    "name": "Georgianne",
+    "id": 81
+  },
+  {
+    "gender": "Female",
+    "phone": 4758237746,
+    "name": "Catie",
+    "id": 82
+  },
+  {
+    "gender": "Male",
+    "phone": 7647130621,
+    "name": "Franky",
+    "id": 83
+  },
+  {
+    "gender": "Male",
+    "phone": 2673833440,
+    "name": "Saw",
+    "id": 84
+  },
+  {
+    "gender": "Male",
+    "phone": 6835038785,
+    "name": "Ingamar",
+    "id": 85
+  },
+  {
+    "gender": "Female",
+    "phone": 2655095364,
+    "name": "Brook",
+    "id": 86
+  },
+  {
+    "gender": "Female",
+    "phone": 6475942543,
+    "name": "Fenelia",
+    "id": 87
+  },
+  {
+    "gender": "Male",
+    "phone": 1279288759,
+    "name": "Julie",
+    "id": 88
+  },
+  {
+    "gender": "Male",
+    "phone": 1111111111,
+    "name": "Adan",
+    "id": 89
+  },
+  {
+    "gender": "Male",
+    "phone": 1321231236,
+    "name": "TJ",
+    "id": 90
+  },
+  {
+    "gender": "Female",
+    "phone": 7338210388,
+    "name": "Jaquenetta",
+    "id": 91
+  },
+  {
+    "gender": "Female",
+    "phone": 6911121800,
+    "name": "Caitlin",
+    "id": 92
+  },
+  {
+    "gender": "Female",
+    "phone": 9289012086,
+    "name": "Chanda",
+    "id": 93
+  },
+  {
+    "gender": "Female",
+    "phone": 6385380284,
+    "name": "Marylee",
+    "id": 94
+  },
+  {
+    "gender": "Female",
+    "phone": 5986446659,
+    "name": "Lilias",
+    "id": 95
+  },
+  {
+    "gender": "Male",
+    "phone": 1788387111,
+    "name": "Abie",
+    "id": 96
+  },
+  {
+    "gender": "Male",
+    "phone": 6586151920,
+    "name": "Saleem",
+    "id": 97
+  },
+  {
+    "gender": "Female",
+    "phone": 1042902741,
+    "name": "Elita",
+    "id": 98
+  },
+  {
+    "gender": "Male",
+    "phone": 3154964396,
+    "name": "Adair",
+    "id": 99
+  },
+  {
+    "gender": "Male",
+    "phone": 8877445596,
+    "name": "MikeEU3",
+    "id": 111
+  },
+  {
+    "gender": "Male",
+    "phone": 8877445596,
+    "name": "MikeEU3",
+    "id": 112
+  },
+  {
+    "gender": "Male",
+    "phone": 7035714586,
+    "name": "MikeSmith",
+    "id": 102
+  },
+  {
+    "gender": "Male",
+    "phone": 7035714586,
+    "name": "MikeSmith",
+    "id": 104
+  },
+  {
+    "gender": "Male",
+    "phone": 1111111111,
+    "name": "Adan",
+    "id": 113
+  },
+  {
+    "gender": "Male",
+    "phone": 1321231236,
+    "name": "PutName",
+    "id": 115
+  },
+  {
+    "gender": "Male",
+    "phone": 7035714586,
+    "name": "MikeSmith",
+    "id": 103
+  },
+  {
+    "gender": "Male",
+    "phone": 8877445596,
+    "name": "MikeEU",
+    "id": 105
+  },
+  {
+    "gender": "Male",
+    "phone": 8877445596,
+    "name": "MikeEU",
+    "id": 106
+  },
+  {
+    "gender": "Male",
+    "phone": 8877445596,
+    "name": "MikeEU",
+    "id": 107
+  },
+  {
+    "gender": "Male",
+    "phone": 8877445596,
+    "name": "MikeEU",
+    "id": 108
+  },
+  {
+    "gender": "Male",
+    "phone": 8877445596,
+    "name": "MikeEU2",
+    "id": 109
+  },
+  {
+    "gender": "Male",
+    "phone": 8877445596,
+    "name": "MikeEU2",
+    "id": 110
+  },
+  {
+    "gender": "Male",
+    "phone": 1111111111,
+    "name": "Adan",
+    "id": 114
+  }
+]
+
+22:09:06.146 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+22:09:06.284 request:
+1 > POST http://52.55.102.92:8000/api/spartans
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 53
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 52.55.102.92:8000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"gender":"Female","phone":739268685,"name":"Darcel"}
+
+22:09:06.523 response time in milliseconds: 238.58
+1 < 400
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Mon, 07 Dec 2020 21:09:07 GMT
+1 < Transfer-Encoding: chunked
+{"timestamp":"2020-12-07T21:09:08.278+00:00","status":400,"error":"Bad Request","message":"","path":"/api/spartans"}
+
+22:09:06.525 status code was: 400, expected: 201, response time: 239, url: http://52.55.102.92:8000/api/spartans, response: {"path":"/api/spartans","error":"Bad Request","message":"","timestamp":"2020-12-07T21:09:08.278+00:00","status":400}
+{"id":325,"name":"Mike","gender":"Male","phone":1234567891},{"id":402,"name":"Dennis","gender":"Male","phone":12345678901},{"id":403,"name":"Lorenza","gender":"Female","phone":31234781237},{"id":464,"name":"Lilia","gender":"Female","phone":5299365251},{"id":465,"name":"Jonas","gender":"Male","phone":1743529726},{"id":466,"name":"Elton","gender":"Male","phone":6519451761},{"id":467,"name":"Miguel","gender":"Male","phone":6257647184},{"id":468,"name":"Casey","gender":"Male","phone":12949707349},{"id":469,"name":"Wally","gender":"Female","phone":9373124498},{"id":470,"name":"Viviana","gender":"Female","phone":41903501627},{"id":471,"name":"Bobby","gender":"Male","phone":9549717959},{"id":472,"name":"Lucila","gender":"Female","phone":4826219968},{"id":473,"name":"Adria","gender":"Male","phone":2141937194},{"id":474,"name":"Floretta","gender":"Male","phone":79544159945},{"id":475,"name":"Sierra","gender":"Female","phone":8103700786},{"id":476,"name":"Marisa","gender":"Female","phone":5705795300},{"id":574,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":575,"name":"Emanuel","gender":"Female","phone":9328387320},{"id":577,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":578,"name":"Alica","gender":"Female","phone":4819930861},{"id":580,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":581,"name":"Shizue","gender":"Male","phone":1165495426},{"id":584,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":585,"name":"Lavelle","gender":"Female","phone":3913662484},{"id":818,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":625,"name":"Chong","gender":"Male","phone":5285754306},{"id":823,"name":"Shayne","gender":"Female","phone":4837622916},{"id":819,"name":"Jessica","gender":"Male","phone":5294528619},{"id":821,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":825,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":842,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":826,"name":"Della","gender":"Male","phone":1447718796},{"id":828,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":829,"name":"Karine","gender":"Female","phone":9840292072},{"id":831,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":832,"name":"Sean","gender":"Female","phone":2402873174},{"id":834,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":835,"name":"Freddie","gender":"Female","phone":3945758722},{"id":837,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":838,"name":"Maximo","gender":"Male","phone":9363494893},{"id":840,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":841,"name":"Evie","gender":"Male","phone":9269762145},{"id":846,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":844,"name":"Maynard","gender":"Female","phone":4108883927},{"id":851,"name":"Stan","gender":"Male","phone":4804401749},{"id":847,"name":"Nelda","gender":"Male","phone":8731409390},{"id":849,"name":"NaberLaa","gender":"Female","phone":9994456858},{"id":850,"name":"NaberLaa","gender":"Female","phone":9994456858},{"id":859,"name":"Shelton","gender":"Female","phone":4839062226},{"id":853,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":854,"name":"Hope","gender":"Female","phone":7713465832},{"id":856,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":872,"name":"Ezra","gender":"Female","phone":6736278875},{"id":858,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":861,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":862,"name":"Dusti","gender":"Female","phone":9603381914},{"id":864,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":865,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":867,"name":"Giuseppe","gender":"Male","phone":7633002535},{"id":868,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":870,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":871,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":876,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":874,"name":"Daron","gender":"Female","phone":5703095392},{"id":878,"name":"Lanette","gender":"Female","phone":3007190876},{"id":884,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":879,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":880,"name":"Jessie","gender":"Male","phone":7462768055},{"id":882,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":883,"name":"Cami","gender":"Male","phone":5694863602},{"id":885,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":889,"name":"Larita","gender":"Female","phone":9277351689},{"id":886,"name":"Leon","gender":"Female","phone":1288624874},{"id":895,"name":"Peggie","gender":"Male","phone":1731656493},{"id":890,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":891,"name":"Jamar","gender":"Female","phone":9856557521},{"id":893,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":902,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":896,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":897,"name":"Mauro","gender":"Female","phone":7690356281},{"id":899,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":900,"name":"Fausto","gender":"Female","phone":5640323057},{"id":116,"name":"MikeSmith","gender":"Male","phone":1231232133},{"id":117,"name":"MikeSmith","gender":"Male","phone":1231234567},{"id":118,"name":"MikeSmith","gender":"Male","phone":1231232133},{"id":119,"name":"MikeSmith","gender":"Male","phone":1231232133},{"id":120,"name":"Sitivin Ging","gender":"Male","phone":7776542789},{"id":121,"name":"John Bliver","gender":"Male","phone":1234567891},{"id":122,"name":"16723&5^$#@6127","gender":"Male","phone":1231232133},{"id":123,"name":"MikeSmith","gender":"Male","phone":1111222333},{"id":124,"name":"Lorenza","gender":"Female","phone":3312820936},{"id":125,"name":"MikeSmith","gender":"Male","phone":1231232133},{"id":128,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":129,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":130,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":131,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":132,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":133,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":134,"name":"Hippocratides","gender":"Male","phone":8877445596},{"id":135,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":136,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":137,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":138,"name":"Agis","gender":"Male","phone":8877445596},{"id":139,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":140,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":141,"name":"MikeEU2","gender":"Male","phone":8877445596},{"id":148,"name":"MikeEU2","gender":"Male","phone":8877445596},{"id":186,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":189,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":271,"name":"MikeEU3","gender":"Male","phone":8877445596},{"id":278,"name":"asdadtfa","gender":"Male","phone":123456678234},{"id":282,"name":"Mike","gender":"Male","phone":2834976523},{"id":284,"name":"Dom","gender":"Male","phone":7845672578},{"id":283,"name":"Crystal","gender":"Female","phone":5524280441},{"id":285,"name":"Crystal","gender":"Female","phone":5524280441},{"id":286,"name":"Crystal","gender":"Female","phone":5524280441},{"id":287,"name":"Crystal","gender":"Female","phone":5524280441},{"id":291,"name":"MikeEU","gender":"Male","phone":2233344441},{"id":292,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":293,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":294,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":295,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":302,"name":"Gregoire","gender":"Male","phone":8504518012},{"id":297,"name":"Said","gender":"Female","phone":1233456786},{"id":300,"name":"Said","gender":"Female","phone":1233456786},{"id":301,"name":"Crystal","gender":"Female","phone":5524280441},{"id":303,"name":"Gordan","gender":"Male","phone":1102748011},{"id":304,"name":"Jacquelin","gender":"Female","phone":1244294978},{"id":305,"name":"Grantley","gender":"Male","phone":5634394595},{"id":306,"name":"Granville","gender":"Male","phone":2894172611},{"id":307,"name":"Zorah","gender":"Female","phone":3415950418},{"id":308,"name":"Clarie","gender":"Female","phone":5802035338},{"id":309,"name":"Tadeas","gender":"Male","phone":8451911419},{"id":310,"name":"Annabelle","gender":"Female","phone":4988111013},{"id":315,"name":"Mikeupdated","gender":"Female","phone":2222211133},{"id":316,"name":"Mikeupdated","gender":"Female","phone":2222211133},{"id":317,"name":"Mikeupdated","gender":"Female","phone":2222211133},{"id":318,"name":"Mikeupdated","gender":"Female","phone":2222211133},{"id":319,"name":"Mikeupdated","gender":"Female","phone":2222211133},{"id":320,"name":"Mikeupdated","gender":"Female","phone":2222211133},{"id":321,"name":"Mikeupdated","gender":"Female","phone":2222211133},{"id":322,"name":"Mikeupdated","gender":"Female","phone":2222211133},{"id":335,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":344,"name":"MikeEU2","gender":"Male","phone":8877445596},{"id":343,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":362,"name":"Tonya","gender":"Female","phone":3806024355},{"id":391,"name":"like","gender":"Male","phone":43234238789},{"id":392,"name":"like","gender":"Male","phone":43234238789},{"id":411,"name":"Agatha","gender":"Male","phone":9800789889},{"id":421,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":422,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":437,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":448,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":477,"name":"Otis","gender":"Male","phone":41296649769},{"id":478,"name":"Candyce","gender":"Male","phone":6162711693},{"id":630,"name":"Vanna","gender":"Female","phone":3956604689},{"id":627,"name":"Lorenza","gender":"Female","phone":3312820936},{"id":632,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":635,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":633,"name":"Ladawn","gender":"Female","phone":7101064202},{"id":636,"name":"Kurtis","gender":"Female","phone":1864344683},{"id":642,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":640,"name":"Seymour","gender":"Female","phone":6756960718},{"id":644,"name":"Guadalupe","gender":"Female","phone":2136328455},{"id":643,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":646,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":660,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":650,"name":"Elisa","gender":"Male","phone":5756090581},{"id":651,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":653,"name":"Jessie","gender":"Female","phone":6394961205},{"id":655,"name":"Dennis","gender":"Male","phone":12345678901},{"id":661,"name":"Cory","gender":"Female","phone":8185485942},{"id":669,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":664,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":666,"name":"Kyong","gender":"Male","phone":7554859097},{"id":670,"name":"Modesto","gender":"Female","phone":3914184609},{"id":672,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":674,"name":"Andy","gender":"Male","phone":6951996733},{"id":676,"name":"Ira","gender":"Female","phone":9451832842},{"id":678,"name":"Dean","gender":"Female","phone":6161330139},{"id":693,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":682,"name":"Suanne","gender":"Female","phone":6093422734},{"id":683,"name":"Elmira","gender":"Male","phone":2988290501},{"id":686,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":687,"name":"Johnny","gender":"Female","phone":9042632781},{"id":699,"name":"Ezekiel","gender":"Male","phone":3732629159},{"id":695,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":702,"name":"Reanna","gender":"Male","phone":7931743259},{"id":706,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":710,"name":"Lela","gender":"Female","phone":9489034943},{"id":712,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":714,"name":"Lavonna","gender":"Male","phone":5092933848},{"id":718,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":720,"name":"Enrique","gender":"Female","phone":1924188256},{"id":722,"name":"Cristopher","gender":"Male","phone":9584675022},{"id":731,"name":"NaberLaa","gender":"Female","phone":9994456858},{"id":728,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":730,"name":"Elva","gender":"Male","phone":8164450711},{"id":732,"name":"NaberLaa","gender":"Female","phone":9994456858},{"id":733,"name":"Kenneth","gender":"Female","phone":5108474968},{"id":735,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":744,"name":"Ezekiel","gender":"Female","phone":7036505850},{"id":740,"name":"Maximo","gender":"Female","phone":9997359603},{"id":741,"name":"Aaron","gender":"Female","phone":5889183602},{"id":745,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":747,"name":"Denny","gender":"Male","phone":7254856569},{"id":752,"name":"Shu","gender":"Female","phone":1639323480},{"id":127,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":188,"name":"MikhhheSmith","gender":"Male","phone":1231232133},{"id":194,"name":"MikeEU2","gender":"Male","phone":8877445596},{"id":195,"name":"Wermke","gender":"Male","phone":1524521500},{"id":196,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":197,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":198,"name":"MikeEU2","gender":"Male","phone":8877445596},{"id":259,"name":"mathmanaas","gender":"Male","phone":4234543556},{"id":263,"name":"mathmanaas","gender":"Male","phone":4234543556},{"id":261,"name":"Mike","gender":"Male","phone":1234567891},{"id":265,"name":"WelcomeSpartan","gender":"Male","phone":1234524523},{"id":264,"name":"mathmanaas","gender":"Male","phone":4234543556},{"id":266,"name":"DiegoMaradona","gender":"Male","phone":123122322322},{"id":267,"name":"MikeEU3","gender":"Male","phone":8877445596},{"id":268,"name":"MikeEU3","gender":"Male","phone":8877445596},{"id":269,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":273,"name":"Mike","gender":"Male","phone":2834976523},{"id":340,"name":"Sare","gender":"Female","phone":12000000088},{"id":341,"name":"Sare","gender":"Female","phone":12000000088},{"id":342,"name":"Sare","gender":"Female","phone":12000000088},{"id":352,"name":"Katheleen","gender":"Male","phone":4031090447},{"id":353,"name":"Chantel","gender":"Male","phone":2690564487},{"id":354,"name":"Rueben","gender":"Female","phone":4717759436},{"id":355,"name":"Ricky","gender":"Male","phone":7811060170},{"id":356,"name":"Gail","gender":"Male","phone":4327204007},{"id":357,"name":"Britt","gender":"Female","phone":3801417600},{"id":358,"name":"Kevin","gender":"Male","phone":8164384727},{"id":368,"name":"Karate","gender":"Male","phone":32112312323},{"id":366,"name":"Karate","gender":"Male","phone":32112312323},{"id":436,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":369,"name":"Ivana","gender":"Female","phone":4557645404},{"id":385,"name":"like","gender":"Male","phone":43234238789},{"id":435,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":439,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":440,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":441,"name":"MikeEU","gender":"Male","phone":8877445596},{"id":442,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":443,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":444,"name":"MikeEU3","gender":"Male","phone":8877445596},{"id":445,"name":"MikeEU3","gender":"Male","phone":8877445596},{"id":564,"name":"Karate","gender":"Male","phone":32112312323},{"id":561,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":609,"name":"NaberLaa","gender":"Female","phone":9994456858},{"id":565,"name":"Werner","gender":"Male","phone":4737669876},{"id":567,"name":"Karate","gender":"Male","phone":32112312323},{"id":568,"name":"Lorenzo","gender":"Female","phone":7010415806},{"id":606,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":607,"name":"Erich","gender":"Male","phone":2632391065},{"id":611,"name":"Verdell","gender":"Male","phone":6438319122},{"id":629,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":657,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":638,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":639,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":647,"name":"Melvina","gender":"Female","phone":8366345155},{"id":649,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":677,"name":"Marisha","gender":"Male","phone":4416515342},{"id":658,"name":"Bo","gender":"Male","phone":5135400929},{"id":663,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":665,"name":"Giuseppina","gender":"Female","phone":8374860035},{"id":673,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":685,"name":"Vicky","gender":"Female","phone":3456789032},{"id":679,"name":"Elfreda","gender":"Female","phone":6346886440},{"id":681,"name":"Dirk","gender":"Male","phone":9871777341},{"id":704,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":689,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":691,"name":"Mel","gender":"Female","phone":1633319411},{"id":698,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":697,"name":"Gale","gender":"Female","phone":1738428430},{"id":701,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":707,"name":"Martina","gender":"Female","phone":9107235100},{"id":705,"name":"Carl","gender":"Female","phone":2458799142},{"id":721,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":709,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":715,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":716,"name":"Buford","gender":"Female","phone":3006145483},{"id":724,"name":"Vicky","gender":"Female","phone":3456789032},{"id":739,"name":"Amira","gender":"Male","phone":3797509704},{"id":726,"name":"Lorenza","gender":"Female","phone":3312820936},{"id":736,"name":"Lorina","gender":"Female","phone":3395522630},{"id":743,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":742,"name":"Wilhelmina","gender":"Female","phone":3572897134},{"id":750,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":755,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":753,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":760,"name":"Magaret","gender":"Male","phone":8454504324},{"id":756,"name":"Pat","gender":"Male","phone":3090364327},{"id":758,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":759,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":764,"name":"Chrissy","gender":"Female","phone":5977718513},{"id":762,"name":"Misty","gender":"Female","phone":7732934163},{"id":763,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":768,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":766,"name":"Lorenza","gender":"Female","phone":3312820936},{"id":773,"name":"Consuela","gender":"Female","phone":3137268886},{"id":769,"name":"Heidi","gender":"Female","phone":2234141544},{"id":771,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":778,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":774,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":776,"name":"Donnell","gender":"Female","phone":5115869195},{"id":777,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":779,"name":"Yajaira","gender":"Female","phone":3026074066},{"id":780,"name":"Chase","gender":"Female","phone":5868927375},{"id":785,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":782,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":783,"name":"Elmer","gender":"Female","phone":4906330230},{"id":788,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":786,"name":"Leigh","gender":"Male","phone":1950752274},{"id":802,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":789,"name":"Marcy","gender":"Male","phone":5992593453},{"id":791,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":792,"name":"Drusilla","gender":"Male","phone":7382645601},{"id":794,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":795,"name":"Mike","gender":"Male","phone":1558836138},{"id":797,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":798,"name":"Kecia","gender":"Female","phone":3745226064},{"id":800,"name":"Dennis","gender":"Male","phone":12345678901},{"id":804,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":806,"name":"Pat","gender":"Female","phone":7052494556},{"id":805,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":809,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":810,"name":"Avril","gender":"Female","phone":3987825082},{"id":812,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":813,"name":"Jonnie","gender":"Female","phone":3095649431},{"id":815,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":816,"name":"Arlie","gender":"Female","phone":8579243079},{"id":903,"name":"Gail","gender":"Male","phone":7358194074},{"id":904,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":906,"name":"Bernard","gender":"Female","phone":6894697424},{"id":907,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":923,"name":"Alba","gender":"Male","phone":6136084289},{"id":909,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":912,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":917,"name":"Shavonne","gender":"Male","phone":8711383015},{"id":919,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":932,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":928,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":937,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":934,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":940,"name":"Glady","gender":"Male","phone":1692348797},{"id":948,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":920,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":911,"name":"NaberLaa","gender":"Female","phone":9994456858},{"id":913,"name":"Myron","gender":"Female","phone":6181290178},{"id":943,"name":"Nancie","gender":"Male","phone":6202739415},{"id":926,"name":"Reynaldo","gender":"Female","phone":3505139748},{"id":938,"name":"Emilie","gender":"Male","phone":7341755139},{"id":954,"name":"Venus","gender":"Female","phone":5675190219},{"id":946,"name":"Odessa","gender":"Male","phone":4300533598},{"id":949,"name":"Junko","gender":"Female","phone":3961896480},{"id":951,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":910,"name":"NaberLaa","gender":"Female","phone":9994456858},{"id":914,"name":"Vance","gender":"Male","phone":8242225003},{"id":921,"name":"Fred","gender":"Female","phone":9146996624},{"id":930,"name":"Porter","gender":"Female","phone":8976950361},{"id":924,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":933,"name":"Hubert","gender":"Female","phone":8869027400},{"id":942,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":936,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":945,"name":"Lorenza","gender":"Female","phone":3123781237},{"id":952,"name":"Lorenza","gender":"Female","phone":3123781237}]
+
+22:07:40.361 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+22:07:40.376 request:
+1 > GET http://100.25.192.1:8000/api/spartans/search?nameContains=j&gender=Female
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 100.25.192.1:8000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+22:07:40.681 response time in milliseconds: 304.76
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Mon, 07 Dec 2020 21:07:35 GMT
+1 < Transfer-Encoding: chunked
+{"content":[{"id":13,"name":"Jaimie","gender":"Female","phone":7842554879},{"id":27,"name":"Jeanelle","gender":"Female","phone":6662999903},{"id":50,"name":"Jennica","gender":"Female","phone":6986436734},{"id":67,"name":"Janette","gender":"Female","phone":9887020445},{"id":80,"name":"Jocelin","gender":"Female","phone":4299058649},{"id":91,"name":"Jaquenetta","gender":"Female","phone":7338210388}],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"offset":0,"pageSize":20,"pageNumber":0,"unpaged":false,"paged":true},"last":true,"totalElements":20,"totalPages":1,"size":20,"number":0,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":6,"first":true,"empty":false}
+
+22:07:40.689 [print] {
+  "number": 0,
+  "last": true,
+  "size": 20,
+  "numberOfElements": 6,
+  "totalPages": 1,
+  "pageable": {
+    "paged": true,
+    "pageNumber": 0,
+    "offset": 0,
+    "pageSize": 20,
+    "unpaged": false,
+    "sort": {
+      "unsorted": true,
+      "sorted": false,
+      "empty": true
+    }
+  },
+  "sort": {
+    "unsorted": true,
+    "sorted": false,
+    "empty": true
+  },
+  "content": [
+    {
+      "gender": "Female",
+      "phone": 7842554879,
+      "name": "Jaimie",
+      "id": 13
+    },
+    {
+      "gender": "Female",
+      "phone": 6662999903,
+      "name": "Jeanelle",
+      "id": 27
+    },
+    {
+      "gender": "Female",
+      "phone": 6986436734,
+      "name": "Jennica",
+      "id": 50
+    },
+    {
+      "gender": "Female",
+      "phone": 9887020445,
+      "name": "Janette",
+      "id": 67
+    },
+    {
+      "gender": "Female",
+      "phone": 4299058649,
+      "name": "Jocelin",
+      "id": 80
+    },
+    {
+      "gender": "Female",
+      "phone": 7338210388,
+      "name": "Jaquenetta",
+      "id": 91
+    }
+  ],
+  "first": true,
+  "totalElements": 20,
+  "empty": false
+}
+
+22:07:40.700 assertion failed: path: $.content[0].name, actual: 'Jaimie', expected: 'Jinny', reason: not equal
